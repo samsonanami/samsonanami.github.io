@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+body {
+    font-size: 12;
+    font-family: 'Oxygen', sans-serif !important;
+}
+.small-text {font-size: 10px;}
+.medium-text {font-size: 12px;}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 4px 2px;
+}
+.border {
+	padding: 20px;
+}
+.border1 {border-radius: 12px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 14px;}
+.button5 {border-radius: 50%;}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+input.search-box {
+    width: 180px;
+    background: #333;
+    background-position: -48px 0;
+    padding-left: 30px;
+    margin-top: 45px;
+    float: right;
+}
+
+h3 {padding-top: 20px;}
+img {padding: 5px;}
+
+
+.text-black {color:black;}
+
+.form-check {
+    color: white;
+    padding-left: 15px;
+}
+
+/* RATINGS */
+.star-rating {
+    line-height: 32px;
+    font-size: 1.25em;
+}
+
+.star-rating .fa-star {
+    color: yellow;
+}
