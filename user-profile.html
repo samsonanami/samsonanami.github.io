@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <!-- for font awesome icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -19,12 +21,15 @@
         <a class="nav-link" style="color:white;" href="#">
             WEECONNECT: Profile view
         </a>
-        <img src="images/user.jpg" alt="User Image" class="rounded-circle">
     </nav>
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-6 col-sm-4"></div>
-            <div class="col-xs-6 col-sm-8"></div>
+            <div class="col-xs-6 col-sm-8 block">
+                <a class="text-warning float-right block" href="index.html">Logout | </a>
+                <a class="text-primary float-right block" href="#">Settings | </a>
+                <a class="text-primary float-right block" href="businesses.html">Home | </a>
+            </div>
         </div>
     </div>
     <div class="container-fluid">
@@ -33,17 +38,20 @@
                 <div class="card">
                     <div class="card-header deep-orange lighten-1 white-text">Personal Information</div>
                     <div class="card-body">
-                        <form class="text-left">
-                            <div class="text-center">
-                                <img src="images/user.jpg" alt="User Image" class="rounded-circle">
-                            </div>
+                        <div class="text-center">
+                            <img src="images/user.jpg" alt="User Image" class="rounded-circle">
+                            
+
+                        </div>
+                        <form class="text-left" action="user-profile-update.html">
                             <hr>
                             <span>Registered Username</span>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">@</span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Samsonanami" aria-label="samsonanami" aria-describedby="basic-addon1" disabled>
+                                <input type="text" class="form-control" placeholder="Samsonanami" aria-label="samsonanami" aria-describedby="basic-addon1"
+                                    disabled>
                             </div>
                             <span>Registered Name</span>
                             <div class="inner-addon left-addon">
@@ -55,17 +63,19 @@
                                 <i class="fa fa-envelope-square"></i>
                                 <input type="password" class="form-control" id="lastname" placeholder="samsonanami@gmail.com" disabled>
                             </div>
+                            <hr>
+                            <button class="btn btn-info button">Edit Profile</button>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-xs-6 col-sm-8">
-                <div class="card border-info">
+                <div class="card border-default">
                     <span class="card-header deep-orange lighten-1 white-text">User Bio</span>
                     <div class="card-body">
                         <h4 class="card-title">User profile information</h4>
                         <p class="card-text">Samson Anami, weeConnect business partner with three years in the business.</p>
-                        <button class="btn btn-info">Edit Profile</button>
+                        <br>
                         <h5>Change your password</h5>
                         <form class="text-center">
                             <div class="form-group text-left">
@@ -75,6 +85,8 @@
                                 <input type="password" class="form-control" id="lastname" placeholder="password">
                                 <span class="text-left">Re-enter password</span>
                                 <input type="password" class="form-control" id="lastname" placeholder="password">
+                                <br>
+                                <button class="btn btn-secondary button">Change Password</button>
                             </div>
                         </form>
                     </div>

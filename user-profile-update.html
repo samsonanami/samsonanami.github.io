@@ -19,8 +19,17 @@
         <a class="nav-link" style="color:white;" href="#">
             WEECONNECT: Profile Update
         </a>
-        <img src="images/user.jpg" alt="User Image" style="width:50px; height:50px;" class="rounded-circle">
     </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 col-sm-4"></div>
+            <div class="col-xs-6 col-sm-8 block">
+                <a class="text-warning float-right block" href="index.html">Logout | </a>
+                <a class="text-primary float-right block" href="#">Settings | </a>
+                <a class="text-primary float-right block" href="businesses.html">Home | </a>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
     </div>
     <div class="container-fluid">
@@ -32,6 +41,12 @@
                         <form name="user" class="text-left">
                             <div class="text-center">
                                 <img src="images/user.jpg" alt="User Image" style="width:150px; height:150px;" class="rounded-circle">
+                                <br>
+                                <label class="btn btn-default">
+                                    <i class="fa fa-camera size:7x"></i>
+                                    Browse
+                                    <input type="file" hidden>
+                                </label>
                             </div>
                             <hr>
                             <span>Registered Username</span>
