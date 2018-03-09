@@ -1191,6 +1191,14 @@ span.glyphicon:hover {
     font-size: 16px;
     padding: 10px 40px;
 }
+.contact .submit{
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #337ab7;
+    font-size: 16px;
+    padding: 10px 40px;
+}
 ul.top-links li {
     display: inline-block;
     margin: 0 .3em;
